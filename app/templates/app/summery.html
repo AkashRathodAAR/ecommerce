@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+    <h2>Summary Report</h2>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <pre>{{ summary }}</pre>  
+    {% endif %}
+
+    
+{% endblock %}
